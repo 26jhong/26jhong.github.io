@@ -60,66 +60,20 @@ h2 {
 
 @media (max-width: 600px) {
   .project-grid {grid-template-columns: 1fr;}
-}body {
-  background: linear-gradient(180deg, #fdfcf9 0%, #f3f1ea 100%);
-  font-family: Georgia, serif;
-  max-width: 640px;
-  margin: 60px auto;
-  padding: 0 20px;
-  color: #222;
-  line-height: 1.6;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 4px;
-}
-
-h2 {
-  margin-top: 48px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 6px;
-}
-
-.site-header {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 40px;
-}
-
-.site-header nav a {
-  margin-left: 20px;
-  color: #555;
+.social-links a {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #333;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
-.site-header nav a:hover {
-  color: #000;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px
-}
-
-.project-grid {
-  background: #fff;
-  border: 1px solid #e5e2d8;
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-@media (max-width: 600px) {
-  .project-grid {grid-template-columns: 1fr;}
+.social-links a:hover {
+  background: #222;
+  color: #fff;
 }
