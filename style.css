@@ -1,11 +1,21 @@
 body {
   background: linear-gradient(180deg, #fdfcf9 0%, #f3f1ea 100%);
   font-family: Georgia, serif;
-  max-width: 640px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
   color: #222;
   line-height: 1.6;
+}
+
+#introduction {
+  font-size: 1.9rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 h1 {
@@ -62,18 +72,55 @@ h2 {
   .project-grid {grid-template-columns: 1fr;}
 }
 
-.social-links a {
-  display: inline-block;
-  padding: 6px 14px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  color: #333;
-  text-decoration: none;
+.social-links {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.social-links a:hover {
-  background: #222;
-  color: #fff;
+.social-links a {
+  font-size: 2.0rem;
+  color: #555;
+  transition: color 0.15s ease, transform 0.15s ease;
 }
+
+
+.social-links a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lang-item i {
+  font-size: 2.8rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.lang-item span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.lang-item {
+  transition: transform 0.15s ease;
+}
+
+.lang-item:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .lang-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
